@@ -1,0 +1,13 @@
+@import "colores";
+@import "fuentes";
+@import "tamaños";
+
+
+@mixin alingCenter() {
+	display: flex;
+	justify-content: center;
+}
+
+.alingCenter {
+	@include alingCenter();
+}

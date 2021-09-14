@@ -1,0 +1,52 @@
+@import "colores";
+@import "fuentes";
+@import "tamaños";
+
+.footer {
+	background-color: map-get($colores, azulGris);
+	padding: 25px 5px;
+	align-items: center;
+
+	&__div {
+		display: flex;
+  		justify-content: center;
+
+		&__logo{
+			@media only screen and (min-width: 1024px) {
+				height: map-get($heightLogo, desktop);
+			}
+
+			@media only screen and (max-width: 768px) {
+				height: map-get($heightLogo, mobile);
+				padding-left: 25px;
+			}
+		}
+
+		&__title {
+			
+
+			&--dorado {
+				color: map-get($colores, dorado);
+
+				@media only screen and (min-width: 1024px) {
+					font-size: map-get($link, desktop);
+					text-align: center;
+				}
+
+				@media only screen and (max-width: 768px) {
+					font-size: map-get($link, mobile);
+					padding-left: 30px;
+				}
+			}
+
+			&--blanco {
+				color: map-get($colores, blanco)!important;
+
+				@extend .footer__div__title--dorado;
+
+
+			}
+		
+		}
+	}
+}

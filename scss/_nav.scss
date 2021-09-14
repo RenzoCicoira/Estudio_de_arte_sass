@@ -1,0 +1,53 @@
+@import "colores";
+@import "fuentes";
+@import "tamaños";
+
+.nav {
+	background-color: map-get($colores, azulGris);
+
+
+	&__logo {
+		&__img--tamaño{
+			@media only screen and (min-width: 1024px) {
+				height: map-get($heightLogo, desktop);
+			}
+
+			@media only screen and (max-width: 768px) {
+				height: map-get($heightLogo, mobile);
+			}
+			
+		}
+	}
+
+	&__menu {
+		&__icon{
+			&__img--tamaño{
+				height: map-get($heightMenu, mobile);
+			}
+		}
+	}
+
+	&__titles {
+		&__ul {
+			&__li {
+				&__link {
+					color: map-get($colores, dorado);
+
+					@media only screen and (min-width: 1024px) {
+						font-size: map-get($link, desktop);
+						padding-left: 30px!important;
+					}
+
+					@media only screen and (max-width: 768px) {
+						font-size: map-get($link, mobile);
+					}
+
+					&__link:hover {
+					color: map-get($colores, blanco);
+					}
+
+				}
+			}
+		}
+	}
+}

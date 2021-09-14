@@ -1,0 +1,53 @@
+@import "colores";
+@import "fuentes";
+@import "tamaños";
+
+
+.seccionIndex {
+	padding: 100px 0;
+}
+
+@mixin alingCenter() {
+	display: flex;
+	justify-content: center;
+}
+
+
+.textos {
+
+	&__encabezado {
+		@include alingCenter();
+		color: map-get($colores, dorado);
+
+		@media only screen and (min-width: 1024px) {
+			font-size: map-get($h1, desktop);
+			padding-bottom: map-get($paddingTitle, desktop);
+		}
+
+		@media only screen and (max-width: 768px) {
+			font-size: map-get($h1, mobile);
+			padding-bottom: map-get($paddingTitle, mobile);
+		}
+	}
+
+	&__parrafo {
+		@media only screen and (min-width: 1024px) {
+			font-size: map-get($parrafos, desktop);
+			padding-bottom: 25px;
+		}
+
+		@media only screen and (max-width: 768px) {
+			font-size: map-get($parrafos, mobile);
+			padding: 25px 25px;
+		}
+
+		&--cita {
+			font-style: italic;
+    		font-weight: 700;
+
+    		@extend .textos__parrafo;
+
+
+		}
+	}
+}

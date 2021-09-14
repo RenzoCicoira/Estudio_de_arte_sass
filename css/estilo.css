@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*variables*/
+/*variables*/
+/*variables*/
+/*variables*/
+/*variables*/
+/*variables*/
+.footer {
+  background-color: #1C232F;
+  padding: 25px 5px;
+  align-items: center; }
+  .footer__div {
+    display: flex;
+    justify-content: center; }
+    @media only screen and (min-width: 1024px) {
+      .footer__div__logo {
+        height: 100px; } }
+    @media only screen and (max-width: 768px) {
+      .footer__div__logo {
+        height: 80px;
+        padding-left: 25px; } }
+    .footer__div__title--dorado, .footer__div__title--blanco {
+      color: darkgoldenrod; }
+      @media only screen and (min-width: 1024px) {
+        .footer__div__title--dorado, .footer__div__title--blanco {
+          font-size: 30px;
+          text-align: center; } }
+      @media only screen and (max-width: 768px) {
+        .footer__div__title--dorado, .footer__div__title--blanco {
+          font-size: 20px;
+          padding-left: 30px; } }
+    .footer__div__title--blanco {
+      color: white !important; }
+
+@media only screen and (min-width: 1024px) {
+  .formulario {
+    margin: 50px 350px; } }
+
+@media only screen and (max-width: 768px) {
+  .formulario {
+    margin: 25px 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  .divProducto {
+    padding: 50px; } }
+
+@media only screen and (max-width: 768px) {
+  .divProducto {
+    padding: 20px; } }
+
+.divProducto__main {
+  padding-bottom: 50px; }
+  @media only screen and (min-width: 1024px) {
+    .divProducto__main__divPrincipal__parrafos {
+      padding-right: 50px !important; } }
+  @media only screen and (max-width: 768px) {
+    .divProducto__main__divPrincipal__parrafos {
+      text-align: center;
+      padding-bottom: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .divProducto__main__divPrincipal__doberman {
+      padding-right: 5px !important; } }
+
+@media only screen and (max-width: 768px) {
+  .divProducto__section__div__tabla {
+    margin-bottom: 25px; } }
+
+.card-columns {
+  margin: 30px; }
+
+/*variables*/
+/*variables*/
+/*variables*/
+.alingCenter {
+  display: flex;
+  justify-content: center; }
+
+/*variables*/
+/*variables*/
+/*variables*/
+.seccionIndex {
+  padding: 100px 0; }
+
+.textos__encabezado {
+  display: flex;
+  justify-content: center;
+  color: darkgoldenrod; }
+  @media only screen and (min-width: 1024px) {
+    .textos__encabezado {
+      font-size: 40px;
+      padding-bottom: 35px; } }
+  @media only screen and (max-width: 768px) {
+    .textos__encabezado {
+      font-size: 30px;
+      padding-bottom: 25px; } }
+
+@media only screen and (min-width: 1024px) {
+  .textos__parrafo, .textos__parrafo--cita {
+    font-size: 20px;
+    padding-bottom: 25px; } }
+
+@media only screen and (max-width: 768px) {
+  .textos__parrafo, .textos__parrafo--cita {
+    font-size: 15px;
+    padding: 25px 25px; } }
+
+.textos__parrafo--cita {
+  font-style: italic;
+  font-weight: 700; }
+
+/*variables*/
+/*variables*/
+/*variables*/
+.nav {
+  background-color: #1C232F; }
+  @media only screen and (min-width: 1024px) {
+    .nav__logo__img--tamaño {
+      height: 100px; } }
+  @media only screen and (max-width: 768px) {
+    .nav__logo__img--tamaño {
+      height: 80px; } }
+  .nav__menu__icon__img--tamaño {
+    height: 30px; }
+  .nav__titles__ul__li__link {
+    color: darkgoldenrod; }
+    @media only screen and (min-width: 1024px) {
+      .nav__titles__ul__li__link {
+        font-size: 30px;
+        padding-left: 30px !important; } }
+    @media only screen and (max-width: 768px) {
+      .nav__titles__ul__li__link {
+        font-size: 20px; } }
+    .nav__titles__ul__li__link__link:hover {
+      color: white; }
+
+.container-fluid {
+  margin: 0px; }
+
+.col-lg-12, .col-lg-6, .col-lg-4, .col-xs-12 {
+  padding-left: 0;
+  padding-right: 0; }
+  @media only screen and (max-width: 768px) {
+    .col-lg-12, .col-lg-6, .col-lg-4, .col-xs-12 {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.contenido {
+  margin: 50px 0; }
+
+.titulos {
+  display: flex;
+  justify-content: center;
+  color: darkgoldenrod;
+  padding-top: 30px; }
+  @media only screen and (min-width: 1024px) {
+    .titulos {
+      font-size: 30px; } }
+  @media only screen and (max-width: 768px) {
+    .titulos {
+      font-size: 20px; } }

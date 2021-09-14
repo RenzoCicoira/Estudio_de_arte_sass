@@ -1,0 +1,49 @@
+@import "colores";
+@import "fuentes";
+@import "tamaños";
+@import "footer";
+@import "formulario";
+@import "productos";
+@import "testimonios";
+@import "contacto";
+@import "textosIndex";
+@import "nav";
+
+@mixin alingCenter() {
+	display: flex;
+	justify-content: center;
+}
+
+
+.container-fluid{
+	margin: 0px;
+}
+
+
+.col-lg-12, .col-lg-6, .col-lg-4, .col-xs-12 {
+	padding-left: 0;
+	padding-right: 0;
+		@media only screen and (max-width: 768px) {
+			padding-left: 0;
+			padding-right: 0;
+
+	}
+}
+
+.contenido{
+	margin: 50px 0
+}
+
+.titulos{
+	@include alingCenter();
+	color: map-get($colores, dorado);
+	padding-top: 30px;
+
+	@media only screen and (min-width: 1024px) {
+		font-size: map-get($link, desktop);
+	}
+
+	@media only screen and (max-width: 768px) {
+		font-size: map-get($link, mobile);
+	}
+}

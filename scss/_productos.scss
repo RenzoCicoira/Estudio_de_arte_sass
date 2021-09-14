@@ -1,0 +1,51 @@
+.divProducto {
+	@media only screen and (min-width: 1024px) {
+		padding: 50px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding: 20px;
+	}
+
+	&__main {
+		padding-bottom: 50px;
+
+		&__divPrincipal {
+			&__parrafos {
+				@media only screen and (min-width: 1024px) {
+					padding-right: 50px!important;
+				}
+
+				@media only screen and (max-width: 768px) {
+					text-align: center;
+					padding-bottom: 20px;
+				}
+			}
+
+			&__doberman {
+				@media only screen and (min-width: 1024px) {
+					padding-right: 5px!important;
+				}
+
+				@media only screen and (max-width: 768px) {
+					
+				}
+			}
+		}
+	}
+
+	&__section {
+		&__div {
+			&__tabla {
+				@media only screen and (min-width: 1024px) {
+			
+				}
+
+				@media only screen and (max-width: 768px) {
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}
+
