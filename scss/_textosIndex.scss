@@ -33,21 +33,12 @@
 	&__parrafo {
 		@media only screen and (min-width: 1024px) {
 			font-size: map-get($parrafos, desktop);
-			padding-bottom: 25px;
+			padding-right: 20px;
 		}
 
 		@media only screen and (max-width: 768px) {
 			font-size: map-get($parrafos, mobile);
 			padding: 25px 25px;
-		}
-
-		&--cita {
-			font-style: italic;
-    		font-weight: 700;
-
-    		@extend .textos__parrafo;
-
-
 		}
 	}
 }

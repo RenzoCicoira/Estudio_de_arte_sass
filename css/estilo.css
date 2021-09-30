@@ -95,18 +95,14 @@
       padding-bottom: 25px; } }
 
 @media only screen and (min-width: 1024px) {
-  .textos__parrafo, .textos__parrafo--cita {
-    font-size: 20px;
-    padding-bottom: 25px; } }
+  .textos__parrafo {
+    font-size: 18px;
+    padding-right: 20px; } }
 
 @media only screen and (max-width: 768px) {
-  .textos__parrafo, .textos__parrafo--cita {
+  .textos__parrafo {
     font-size: 15px;
     padding: 25px 25px; } }
-
-.textos__parrafo--cita {
-  font-style: italic;
-  font-weight: 700; }
 
 /*variables*/
 /*variables*/
