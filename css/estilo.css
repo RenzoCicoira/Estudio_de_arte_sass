@@ -129,6 +129,11 @@
     .nav__titles__ul__li__link__link:hover {
       color: white; }
 
+.colorBoton {
+  color: darkgoldenrod;
+  background-color: #1c232f;
+  border-color: #1c232f; }
+
 .container-fluid {
   margin: 0px; }
 
