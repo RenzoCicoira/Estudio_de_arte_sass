@@ -1,3 +1,44 @@
+.th, .tdT {
+	background-color: rgba(222, 164, 34, 0.7);
+	
+
+	@media only screen and (min-width: 1024px) {
+		font-weight: 900;
+		border: solid 4px white;
+
+		height: 90px;
+	    width: 150px;
+	    padding: 20px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		font-weight: 700;
+		border: solid 2px white;
+
+
+	}
+	
+}
+
+.td {
+	
+	
+
+
+	@media only screen and (min-width: 1024px) {
+		font-weight: 200;
+		border: solid 4px white;
+
+	    padding: 20px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		font-weight: 100;
+		border: solid 2px white;
+	}
+	
+}
+
 .divProducto {
 	@media only screen and (min-width: 1024px) {
 		padding: 50px;
@@ -5,47 +46,40 @@
 
 	@media only screen and (max-width: 768px) {
 		padding: 20px;
+
 	}
 
 	&__main {
+		display: flex;
+		justify-content: center;
 		padding-bottom: 50px;
 
-		&__divPrincipal {
-			&__parrafos {
-				@media only screen and (min-width: 1024px) {
-					padding-right: 50px!important;
-				}
-
-				@media only screen and (max-width: 768px) {
-					text-align: center;
-					padding-bottom: 20px;
-				}
-			}
-
-			&__doberman {
-				@media only screen and (min-width: 1024px) {
-					padding-right: 5px!important;
-				}
-
-				@media only screen and (max-width: 768px) {
-					
-				}
-			}
-		}
-	}
-
-	&__section {
 		&__div {
+			color: white;
+		    
+		    text-align: center;
+		    font-size: map-get($fuentes, montserrat);
+
+
+
 			&__tabla {
+				background-color: rgba(0, 0, 0, 0.6);
+				border: none;
+
 				@media only screen and (min-width: 1024px) {
 			
 				}
 
 				@media only screen and (max-width: 768px) {
 					margin-bottom: 25px;
+					font-size: 10px;
 				}
 			}
+
+			
 		}
 	}
+
+	
 }
 

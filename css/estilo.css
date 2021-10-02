@@ -44,6 +44,31 @@
   .formulario {
     margin: 25px 50px; } }
 
+.th, .tdT {
+  background-color: rgba(222, 164, 34, 0.7); }
+  @media only screen and (min-width: 1024px) {
+    .th, .tdT {
+      font-weight: 900;
+      border: solid 4px white;
+      height: 90px;
+      width: 150px;
+      padding: 20px; } }
+  @media only screen and (max-width: 768px) {
+    .th, .tdT {
+      font-weight: 700;
+      border: solid 2px white; } }
+
+@media only screen and (min-width: 1024px) {
+  .td {
+    font-weight: 200;
+    border: solid 4px white;
+    padding: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .td {
+    font-weight: 100;
+    border: solid 2px white; } }
+
 @media only screen and (min-width: 1024px) {
   .divProducto {
     padding: 50px; } }
@@ -53,21 +78,20 @@
     padding: 20px; } }
 
 .divProducto__main {
+  display: flex;
+  justify-content: center;
   padding-bottom: 50px; }
-  @media only screen and (min-width: 1024px) {
-    .divProducto__main__divPrincipal__parrafos {
-      padding-right: 50px !important; } }
-  @media only screen and (max-width: 768px) {
-    .divProducto__main__divPrincipal__parrafos {
-      text-align: center;
-      padding-bottom: 20px; } }
-  @media only screen and (min-width: 1024px) {
-    .divProducto__main__divPrincipal__doberman {
-      padding-right: 5px !important; } }
-
-@media only screen and (max-width: 768px) {
-  .divProducto__section__div__tabla {
-    margin-bottom: 25px; } }
+  .divProducto__main__div {
+    color: white;
+    text-align: center;
+    font-size: "Montserrat"; }
+    .divProducto__main__div__tabla {
+      background-color: rgba(0, 0, 0, 0.6);
+      border: none; }
+      @media only screen and (max-width: 768px) {
+        .divProducto__main__div__tabla {
+          margin-bottom: 25px;
+          font-size: 10px; } }
 
 .card-columns {
   margin: 30px; }
@@ -167,9 +191,12 @@
   margin-top: 60px; }
 
 .colorBoton {
-  color: darkgoldenrod;
-  background-color: #1c232f;
-  border-color: #1c232f; }
+  color: white;
+  background-color: black;
+  border-color: white; }
+
+.colorBoton:hover {
+  color: #DEA426; }
 
 .container-fluid {
   margin: 0px; }
@@ -188,10 +215,12 @@
 .titulos {
   display: flex;
   justify-content: center;
-  padding-top: 30px; }
+  font-family: "Montserrat";
+  color: #DEA426;
+  padding-top: 60px; }
   @media only screen and (min-width: 1024px) {
     .titulos {
-      font-size: 17px; } }
+      font-size: 40px; } }
   @media only screen and (max-width: 768px) {
     .titulos {
-      font-size: 12px; } }
+      font-size: 30px; } }

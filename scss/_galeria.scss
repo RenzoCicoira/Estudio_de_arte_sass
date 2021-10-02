@@ -3,7 +3,11 @@
 }
 
 .colorBoton {
-	color: darkgoldenrod;
-    background-color: #1c232f;
-    border-color: #1c232f;
+	color: white;
+    background-color: black;
+    border-color: white;
+}
+
+.colorBoton:hover {
+    color: #DEA426;
 }

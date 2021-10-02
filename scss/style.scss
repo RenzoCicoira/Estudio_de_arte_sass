@@ -37,14 +37,15 @@
 
 .titulos{
 	@include alingCenter();
-	color: map-get($colores, dorado);
-	padding-top: 30px;
+	font-family: map-get($fuentes, montserrat);
+	color: map-get($colores, titulos);
+	padding-top: 60px;
 
 	@media only screen and (min-width: 1024px) {
-		font-size: map-get($link, desktop);
+		font-size: map-get($h1, desktop);
 	}
 
 	@media only screen and (max-width: 768px) {
-		font-size: map-get($link, mobile);
+		font-size: map-get($h1, mobile);
 	}
 }
