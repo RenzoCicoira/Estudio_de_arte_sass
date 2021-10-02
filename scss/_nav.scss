@@ -2,8 +2,28 @@
 @import "fuentes";
 @import "tamaños";
 
+.colorHover {
+	color: map-get($colores, hover)!important;
+}
+
 .nav {
-	background-color: map-get($colores, azulGris);
+	
+	background-color: map-get($colores, colorBarras);
+
+	font-family: map-get($fuentes, montserrat);
+	font-weight: map-get($fuenteGrosor, link);
+	
+
+	@media only screen and (min-width: 1024px) {
+		padding: 5px 70px;
+		box-shadow: 0px 30px 70px #000;
+   		z-index: 5;
+	}
+
+	@media only screen and (max-width: 768px) {
+		box-shadow: 0px 10px 70px #000;
+   		z-index: 5;
+	}
 
 
 	&__logo {
@@ -31,7 +51,7 @@
 		&__ul {
 			&__li {
 				&__link {
-					color: map-get($colores, dorado);
+					color: map-get($colores, blanco);
 
 					@media only screen and (min-width: 1024px) {
 						font-size: map-get($link, desktop);
@@ -42,10 +62,9 @@
 						font-size: map-get($link, mobile);
 					}
 
-					&__link:hover {
-					color: map-get($colores, blanco);
 					}
-
+				&__link:hover {
+				color: map-get($colores, hover);
 				}
 			}
 		}

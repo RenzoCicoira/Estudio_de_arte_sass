@@ -1,4 +1,16 @@
 /*variables*/ 
+
+$fuentes:(
+	montserrat: 'Montserrat'
+	);
+
+$fuenteGrosor: (
+	textos: 300,
+	link: 700,
+	titulos: 600,
+	strong: 600
+	);
+
 $parrafos: (
 	desktop: 18px,
 	mobile: 15px
@@ -10,6 +22,6 @@ $h1: (
 	);
 
 $link: (
-	desktop: 30px,
-	mobile: 20px
+	desktop: 17px,
+	mobile: 12px
 	);

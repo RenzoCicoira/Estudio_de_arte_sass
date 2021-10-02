@@ -3,9 +3,13 @@
 @import "tamaños";
 
 .footer {
-	background-color: map-get($colores, azulGris);
-	padding: 25px 5px;
+	background-color: map-get($colores, colorBarras);
+	padding: 5px 5px;
 	align-items: center;
+
+
+	font-family: map-get($fuentes, montserrat);
+	font-weight: map-get($fuenteGrosor, link);
 
 	&__div {
 		display: flex;
@@ -19,14 +23,16 @@
 			@media only screen and (max-width: 768px) {
 				height: map-get($heightLogo, mobile);
 				padding-left: 25px;
+				
 			}
 		}
 
 		&__title {
-			
+				font-family: map-get($fuentes, montserrat);
+				font-weight: map-get($fuenteGrosor, link);
 
-			&--dorado {
-				color: map-get($colores, dorado);
+			
+				color: map-get($colores, blanco);
 
 				@media only screen and (min-width: 1024px) {
 					font-size: map-get($link, desktop);
@@ -36,17 +42,13 @@
 				@media only screen and (max-width: 768px) {
 					font-size: map-get($link, mobile);
 					padding-left: 30px;
+					
 				}
-			}
-
-			&--blanco {
-				color: map-get($colores, blanco)!important;
-
-				@extend .footer__div__title--dorado;
-
-
-			}
 		
+		}
+
+		&__title:hover {
+			color: map-get($colores, hover);
 		}
 	}
 }

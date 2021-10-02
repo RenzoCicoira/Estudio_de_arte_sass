@@ -14,10 +14,12 @@
 
 
 .textos {
+	font-family: map-get($fuentes, montserrat);
 
 	&__encabezado {
 		@include alingCenter();
-		color: map-get($colores, dorado);
+		color: map-get($colores, titulos);
+		font-weight: map-get($fuenteGrosor, titulos);
 
 		@media only screen and (min-width: 1024px) {
 			font-size: map-get($h1, desktop);
@@ -31,6 +33,9 @@
 	}
 
 	&__parrafo {
+		font-weight: map-get($fuenteGrosor, textos);
+
+
 		@media only screen and (min-width: 1024px) {
 			font-size: map-get($parrafos, desktop);
 			padding-right: 20px;
@@ -38,7 +43,24 @@
 
 		@media only screen and (max-width: 768px) {
 			font-size: map-get($parrafos, mobile);
-			padding: 10px 25px;
+			padding: 10px 50px;
 		}
+
+		&__strong {
+			color: map-get($colores, strong);
+			font-weight: map-get($fuenteGrosor, strong);
+		}
+	}
+}
+
+.imgIndex {
+	@media only screen and (min-width: 1024px) {
+		position: relative;
+	    top: 100px;
+	    left: 100px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		margin-top: 50px;
 	}
 }

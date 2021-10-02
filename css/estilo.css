@@ -6,9 +6,11 @@
 /*variables*/
 /*variables*/
 .footer {
-  background-color: #1C232F;
-  padding: 25px 5px;
-  align-items: center; }
+  background-color: #000000;
+  padding: 5px 5px;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: 700; }
   .footer__div {
     display: flex;
     justify-content: center; }
@@ -19,18 +21,20 @@
       .footer__div__logo {
         height: 80px;
         padding-left: 25px; } }
-    .footer__div__title--dorado, .footer__div__title--blanco {
-      color: darkgoldenrod; }
+    .footer__div__title {
+      font-family: "Montserrat";
+      font-weight: 700;
+      color: white; }
       @media only screen and (min-width: 1024px) {
-        .footer__div__title--dorado, .footer__div__title--blanco {
-          font-size: 30px;
+        .footer__div__title {
+          font-size: 17px;
           text-align: center; } }
       @media only screen and (max-width: 768px) {
-        .footer__div__title--dorado, .footer__div__title--blanco {
-          font-size: 20px;
+        .footer__div__title {
+          font-size: 12px;
           padding-left: 30px; } }
-    .footer__div__title--blanco {
-      color: white !important; }
+    .footer__div__title:hover {
+      color: #DEA426; }
 
 @media only screen and (min-width: 1024px) {
   .formulario {
@@ -81,34 +85,64 @@
 .seccionIndex {
   padding: 100px 0; }
 
-.textos__encabezado {
-  display: flex;
-  justify-content: center;
-  color: darkgoldenrod; }
-  @media only screen and (min-width: 1024px) {
-    .textos__encabezado {
-      font-size: 40px;
-      padding-bottom: 35px; } }
-  @media only screen and (max-width: 768px) {
-    .textos__encabezado {
-      font-size: 30px;
-      padding-bottom: 25px; } }
+.textos {
+  font-family: "Montserrat"; }
+  .textos__encabezado {
+    display: flex;
+    justify-content: center;
+    color: #DEA426;
+    font-weight: 600; }
+    @media only screen and (min-width: 1024px) {
+      .textos__encabezado {
+        font-size: 40px;
+        padding-bottom: 35px; } }
+    @media only screen and (max-width: 768px) {
+      .textos__encabezado {
+        font-size: 30px;
+        padding-bottom: 25px; } }
+  .textos__parrafo {
+    font-weight: 300; }
+    @media only screen and (min-width: 1024px) {
+      .textos__parrafo {
+        font-size: 18px;
+        padding-right: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .textos__parrafo {
+        font-size: 15px;
+        padding: 10px 50px; } }
+    .textos__parrafo__strong {
+      color: #DEA426;
+      font-weight: 600; }
 
 @media only screen and (min-width: 1024px) {
-  .textos__parrafo {
-    font-size: 18px;
-    padding-right: 20px; } }
+  .imgIndex {
+    position: relative;
+    top: 100px;
+    left: 100px; } }
 
 @media only screen and (max-width: 768px) {
-  .textos__parrafo {
-    font-size: 15px;
-    padding: 10px 25px; } }
+  .imgIndex {
+    margin-top: 50px; } }
 
 /*variables*/
 /*variables*/
 /*variables*/
+.colorHover {
+  color: #DEA426 !important; }
+
 .nav {
-  background-color: #1C232F; }
+  background-color: #000000;
+  font-family: "Montserrat";
+  font-weight: 700; }
+  @media only screen and (min-width: 1024px) {
+    .nav {
+      padding: 5px 70px;
+      box-shadow: 0px 30px 70px #000;
+      z-index: 5; } }
+  @media only screen and (max-width: 768px) {
+    .nav {
+      box-shadow: 0px 10px 70px #000;
+      z-index: 5; } }
   @media only screen and (min-width: 1024px) {
     .nav__logo__img--tamaño {
       height: 100px; } }
@@ -116,18 +150,21 @@
     .nav__logo__img--tamaño {
       height: 80px; } }
   .nav__menu__icon__img--tamaño {
-    height: 30px; }
+    height: 25px; }
   .nav__titles__ul__li__link {
-    color: darkgoldenrod; }
+    color: white; }
     @media only screen and (min-width: 1024px) {
       .nav__titles__ul__li__link {
-        font-size: 30px;
+        font-size: 17px;
         padding-left: 30px !important; } }
     @media only screen and (max-width: 768px) {
       .nav__titles__ul__li__link {
-        font-size: 20px; } }
-    .nav__titles__ul__li__link__link:hover {
-      color: white; }
+        font-size: 12px; } }
+  .nav__titles__ul__li__link:hover {
+    color: #DEA426; }
+
+.galeriaMain {
+  margin-top: 60px; }
 
 .colorBoton {
   color: darkgoldenrod;
@@ -151,11 +188,10 @@
 .titulos {
   display: flex;
   justify-content: center;
-  color: darkgoldenrod;
   padding-top: 30px; }
   @media only screen and (min-width: 1024px) {
     .titulos {
-      font-size: 30px; } }
+      font-size: 17px; } }
   @media only screen and (max-width: 768px) {
     .titulos {
-      font-size: 20px; } }
+      font-size: 12px; } }
